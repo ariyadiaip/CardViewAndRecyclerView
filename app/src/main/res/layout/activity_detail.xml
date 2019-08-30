@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/ivAccount"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="S"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ml"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:background="@drawable/red_rounded"/>
+
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From : "
+        android:layout_toRightOf="@id/ivAccount"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sam"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tvFrom"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weekend adventure"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_below="@id/tvName"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/ivAccount"/>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's Go fishing with Mr. Johnson..."
+        android:textSize="20sp"
+        android:layout_below="@id/ivAccount"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:19am"
+        android:textSize="15sp"
+        android:layout_below="@id/tvContent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"/>
+
+    <ImageButton
+        android:id="@+id/bStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star"
+        android:background="@android:color/transparent"
+        android:layout_toRightOf="@id/tvTime"
+        android:layout_below="@id/tvContent"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

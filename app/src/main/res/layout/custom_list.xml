@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/imgAccount"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="S"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ml"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:background="@drawable/red_rounded"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sam"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imgAccount"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weekend adventure"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_below="@id/name"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/imgAccount"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Let's Go fishing with Mr. Johnson..."
+        android:textSize="15sp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/imgAccount"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:19am"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+    <ImageButton
+        android:id="@+id/btnStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/time"
+        android:layout_marginRight="9dp"/>
+
+</RelativeLayout>
